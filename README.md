@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Корректировки запуска приложения
+
+Для кореектной работы нужно перейти в папку server/,
+далее командой `npm i` или `yarn` подтянуть все нужные зависимости. 
+Далее командой `node server.js` запустить сервер. 
+Выйти в главную папку и запускать основное приложение командами ниже
 
 ## Available Scripts
 
