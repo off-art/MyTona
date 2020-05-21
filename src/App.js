@@ -6,29 +6,24 @@ import { Switch, Route, Redirect, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { autoLogin } from "./store/actions/auth";
 
-function App({ autoLogin, isAuth  }) {
 
-
+function App({ autoLogin, isAuth }) {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const serverUrl = "http://localhost:3001"
   useEffect(() => {
-    autoLogin()
+    autoLogin();
 
-    fetch(
-      "http://newsapi.org/v2/top-headlines?" +
-        "country=ru&" +
-        "pageSize=100&" +
-        "apiKey=2380086968a1446d87000d3087b96671"
-    )
+    fetch(serverUrl)
       .then((response) => response.json())
       .then((news) => {
         setNews(news);
         setTimeout(() => {
           setLoading(false);
-        },2000)
+        }, 2000);
       });
-  },[]);
+  }, [autoLogin]);
 
   let routes = (
     <Switch>

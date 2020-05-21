@@ -1,9 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Moment from "react-moment";
+
 function OneNews(props) {
   const { urlToImage, title, description, publishedAt, url } = props.news;
-  
+
   return (
     <Card style={{ marginTop: "10px" }}>
       <Card.Img variant="top" src={urlToImage} />

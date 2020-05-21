@@ -1,0 +1,11 @@
+.shadowText {
+  text-shadow: 0 0 30px black;
+}
+img {
+  width: 32%;
+}
+.logo-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
