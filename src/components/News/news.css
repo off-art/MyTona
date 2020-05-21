@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.paginationList {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
